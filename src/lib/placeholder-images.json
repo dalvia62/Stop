@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Professional legal office background",
+      "imageUrl": "https://picsum.photos/seed/legal1/1200/800",
+      "imageHint": "law office"
+    },
+    {
+      "id": "blog-1",
+      "description": "Stressed person on phone",
+      "imageUrl": "https://picsum.photos/seed/stress/800/600",
+      "imageHint": "phone stress"
+    },
+    {
+      "id": "blog-2",
+      "description": "Legal documents and gavel",
+      "imageUrl": "https://picsum.photos/seed/law/800/600",
+      "imageHint": "legal document"
+    },
+    {
+      "id": "blog-3",
+      "description": "Financial peace of mind",
+      "imageUrl": "https://picsum.photos/seed/peace/800/600",
+      "imageHint": "serene home"
+    }
+  ]
 }
