@@ -20,11 +20,8 @@ export function Header() {
           <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Support</Link>
         </nav>
         <div className="flex items-center gap-4">
-          <Button variant="ghost" className="hidden sm:inline-flex" asChild>
+          <Button variant="ghost" asChild>
             <Link href="/contact">Contact</Link>
-          </Button>
-          <Button className="bg-secondary hover:bg-secondary/90 text-primary font-bold" asChild>
-            <Link href="/contact">Get Help</Link>
           </Button>
         </div>
       </div>
