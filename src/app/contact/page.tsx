@@ -1,4 +1,3 @@
-
 "use client"
 
 import { useState } from 'react';
@@ -39,7 +38,7 @@ export default function ContactPage() {
               <div>
                 <h1 className="text-4xl font-headline text-primary mb-6">Contact Us</h1>
                 <p className="text-muted-foreground leading-relaxed">
-                  Have questions about your order or need assistance with the generator? Our support team is here to help you regain your peace of mind.
+                  Have questions about your order or need assistance? Our support team is here to help you regain your peace of mind.
                 </p>
               </div>
 
@@ -50,7 +49,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-bold text-sm text-primary uppercase tracking-wider">Email Us</p>
-                    <p className="text-muted-foreground">support@stopanddesist.com</p>
+                    <p className="text-muted-foreground">stopanddesist@gmail.com</p>
                   </div>
                 </div>
 
@@ -70,7 +69,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-bold text-sm text-primary uppercase tracking-wider">Business Name</p>
-                    <p className="text-muted-foreground">StopAndDesist LLC</p>
+                    <p className="text-muted-foreground">Stop And Desist</p>
                   </div>
                 </div>
               </div>
