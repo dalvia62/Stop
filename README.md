@@ -4,32 +4,10 @@ Stop And Desist is a specialized consumer protection platform designed to help i
 
 ## Features
 
-- **Conversion-Optimized Landing Page:** Professional hero section, clear "How It Works" guide, and benefit highlights.
+- **Professional Landing Page:** Clean, conversion-focused design with a formal legal aesthetic.
 - **Direct Support Integration:** A streamlined contact system for users to seek expert guidance.
 - **Comprehensive Legal Framework:** Built-in Terms of Service, Privacy Policy, and Refund Policy pages tailored for legal compliance.
-- **Modern Tech Stack:** Next.js 15 (App Router), Tailwind CSS, ShadCN UI, and Genkit for future AI scalability.
-
-## Getting Started
-
-First, install the dependencies:
-
-```bash
-npm install
-```
-
-Second, set up your environment variables:
-Create a `.env` file in the root directory and add your Gemini API key:
-```
-GEMINI_API_KEY=your_api_key_here
-```
-
-Then, run the development server:
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:9002](http://localhost:9002) with your browser to see the result.
+- **Modern Tech Stack:** Next.js 15 (App Router), Tailwind CSS, ShadCN UI, and Genkit for AI scalability.
 
 ## Tech Stack
 
@@ -39,9 +17,33 @@ Open [http://localhost:9002](http://localhost:9002) with your browser to see the
 - **Icons:** [Lucide React](https://lucide.dev/)
 - **AI Tooling:** [Genkit](https://firebase.google.com/docs/genkit)
 
-## Deployment
+## Local Development
 
-This project is configured for deployment on **Firebase App Hosting**. Ensure your Firebase project is set up and linked to your repository.
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Set up environment variables in `.env`:
+   ```
+   GEMINI_API_KEY=your_api_key_here
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+## GitHub Deployment
+
+To push your code to GitHub, run these specific commands:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/dalvia62/Stop.git
+git push -u origin main
+```
 
 ---
 
