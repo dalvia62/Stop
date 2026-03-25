@@ -35,7 +35,7 @@ export default function LandingPage() {
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg h-14 px-8" asChild>
                   <Link href="/generate">Generate My Letter — $49</Link>
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 h-14 px-8" asChild>
+                <Button size="lg" variant="outline" className="bg-transparent border-secondary text-secondary hover:bg-secondary/10 h-14 px-8" asChild>
                   <a href="#how-it-works">See How It Works</a>
                 </Button>
               </div>
@@ -93,7 +93,7 @@ export default function LandingPage() {
                   {[
                     { icon: ShieldAlert, title: "Lawyer-Grade Letters", desc: "Our AI is trained on FDCPA regulations to ensure professional structure." },
                     { icon: Clock, title: "Instant Download", desc: "No waiting days for an attorney. Get your letter in less than 3 minutes." },
-                    { icon: HandCoins, title: "Affordable Alternative", desc: "Why pay $500+ for a simple letter? Get the same results for a fraction of the cost." },
+                    { icon: HandCoins, title: "Handy Fee Structure", desc: "Why pay $500+ for a simple letter? Get the same results for a fraction of the cost." },
                     { icon: Smile, title: "Reduce Stress", desc: "Stop the incessant phone calls and regain your peace of mind." }
                   ].map((benefit, idx) => (
                     <div key={idx} className="flex gap-4">
