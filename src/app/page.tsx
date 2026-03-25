@@ -29,11 +29,11 @@ export default function LandingPage() {
                 Stop Debt Collector Harassment Instantly
               </h1>
               <p className="text-xl lg:text-2xl mb-10 text-blue-100 font-light">
-                Generate a professional cease and desist letter in minutes using AI technology. Take control of your financial peace.
+                Take control of your financial peace. Get the support you need to exercise your legal rights under the FDCPA.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-lg h-14 px-8" asChild>
-                  <Link href="/generate">Generate My Letter — $49</Link>
+                  <Link href="/contact">Get Help Now</Link>
                 </Button>
                 <Button size="lg" variant="outline" className="bg-transparent border-secondary text-secondary hover:bg-secondary/10 h-14 px-8" asChild>
                   <a href="#how-it-works">See How It Works</a>
@@ -41,18 +41,17 @@ export default function LandingPage() {
               </div>
               <div className="mt-12 flex flex-wrap gap-6 items-center opacity-80 text-sm">
                 <div className="flex items-center gap-2">
-                  <ShieldCheck className="w-5 h-5" /> Secure encrypted checkout
+                  <ShieldCheck className="w-5 h-5" /> FDCPA Compliance
                 </div>
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="w-5 h-5" /> Private & confidential
                 </div>
                 <div className="flex items-center gap-2">
-                  <ShieldCheck className="w-5 h-5" /> Used by Americans nationwide
+                  <ShieldCheck className="w-5 h-5" /> Expert Guidance
                 </div>
               </div>
             </div>
           </div>
-          {/* Decorative background element */}
           <div className="absolute right-0 top-1/2 -translate-y-1/2 opacity-10 pointer-events-none hidden lg:block">
             <Scale size={600} />
           </div>
@@ -64,9 +63,9 @@ export default function LandingPage() {
             <h2 className="text-3xl lg:text-4xl font-headline mb-16 text-primary">How It Works</h2>
             <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
               {[
-                { step: "1", title: "Enter Details", desc: "Provide information about the debt collector and the nature of the harassment.", icon: FileText },
-                { step: "2", title: "AI Generation", desc: "Our AI engine crafts a personalized, legally structured cease and desist letter.", icon: Scale },
-                { step: "3", title: "Download & Send", desc: "Instantly download your letter as a PDF and mail it via certified mail.", icon: CheckCircle2 }
+                { step: "1", title: "Reach Out", desc: "Contact our support team to describe the harassment you are facing.", icon: FileText },
+                { step: "2", title: "Expert Review", desc: "We review your situation against consumer protection laws.", icon: Scale },
+                { step: "3", title: "Resolution", desc: "We provide the tools and guidance to stop unlawful collection attempts.", icon: CheckCircle2 }
               ].map((item, idx) => (
                 <div key={idx} className="flex flex-col items-center">
                   <div className="w-20 h-20 rounded-full bg-blue-50 flex items-center justify-center text-secondary mb-6 relative">
@@ -88,12 +87,12 @@ export default function LandingPage() {
           <div className="container px-4 mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
-                <h2 className="text-3xl lg:text-4xl font-headline mb-8 text-primary">Protect Your Legal Rights Without the Legal Fees</h2>
+                <h2 className="text-3xl lg:text-4xl font-headline mb-8 text-primary">Protect Your Legal Rights</h2>
                 <div className="space-y-6">
                   {[
-                    { icon: ShieldAlert, title: "Lawyer-Grade Letters", desc: "Our AI is trained on FDCPA regulations to ensure professional structure." },
-                    { icon: Clock, title: "Instant Download", desc: "No waiting days for an attorney. Get your letter in less than 3 minutes." },
-                    { icon: HandCoins, title: "Handy Fee Structure", desc: "Why pay $500+ for a simple letter? Get the same results for a fraction of the cost." },
+                    { icon: ShieldAlert, title: "Lawyer-Grade Guidance", desc: "Our processes are built around FDCPA regulations to ensure professional outcomes." },
+                    { icon: Clock, title: "Rapid Response", desc: "Don't wait for a slow legal system. Get the information you need to take action today." },
+                    { icon: HandCoins, title: "Cost-Effective", desc: "Access high-quality legal tools and support without the massive attorney retainers." },
                     { icon: Smile, title: "Reduce Stress", desc: "Stop the incessant phone calls and regain your peace of mind." }
                   ].map((benefit, idx) => (
                     <div key={idx} className="flex gap-4">
@@ -111,7 +110,7 @@ export default function LandingPage() {
               <div className="bg-primary rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
                 <h3 className="text-2xl font-headline mb-6">StopAndDesist Guarantee</h3>
                 <p className="text-blue-100 mb-8 leading-relaxed">
-                  We stand by the quality of our generated letters. If your letter is not accepted for standard legal processing or if you encounter technical issues, we offer a full 100% money-back guarantee within 48 hours.
+                  We stand by the quality of our tools and support. If you encounter issues exercising your rights, our team is committed to helping you find a path forward.
                 </p>
                 <div className="flex items-center gap-4 py-4 border-t border-white/10">
                   <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
@@ -127,28 +126,6 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section className="py-20 bg-white border-y">
-          <div className="container px-4 mx-auto">
-            <h2 className="text-3xl font-headline text-center mb-16 text-primary">What Others Are Saying</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                { name: "Sarah J.", location: "Ohio", quote: "I was getting 10 calls a day. After sending the AI-generated letter, the calls stopped within a week. Best $49 I've spent." },
-                { name: "Mark D.", location: "Texas", quote: "Efficient, easy, and authoritative. The letter looked exactly like what my lawyer would have charged me $400 for." },
-                { name: "Elena R.", location: "California", quote: "The harassment was affecting my sleep. This tool gave me the power to fight back instantly. Thank you!" }
-              ].map((t, idx) => (
-                <div key={idx} className="p-8 rounded-2xl bg-background border border-blue-50 italic relative">
-                  <p className="mb-6 text-muted-foreground">"{t.quote}"</p>
-                  <div>
-                    <p className="font-bold not-italic">{t.name}</p>
-                    <p className="text-sm text-secondary not-italic">{t.location}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* FAQ Section */}
         <section className="py-20 bg-background">
           <div className="container px-4 mx-auto max-w-3xl">
@@ -157,31 +134,13 @@ export default function LandingPage() {
               <AccordionItem value="item-1" className="bg-white px-6 rounded-lg border">
                 <AccordionTrigger className="text-left font-bold py-6">Is this legal?</AccordionTrigger>
                 <AccordionContent className="pb-6 text-muted-foreground">
-                  Yes. Under the Fair Debt Collection Practices Act (FDCPA), consumers have the legal right to demand that a debt collector cease communications. Our tool generates a letter that exercises this specific federal right.
+                  Yes. Under the Fair Debt Collection Practices Act (FDCPA), consumers have the legal right to demand that a debt collector cease communications.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-2" className="bg-white px-6 rounded-lg border">
                 <AccordionTrigger className="text-left font-bold py-6">Will collectors stop calling?</AccordionTrigger>
                 <AccordionContent className="pb-6 text-muted-foreground">
-                  Once a debt collector receives a formal cease and desist letter, they are legally required to stop contacting you except for very specific legal reasons (like notifying you of a lawsuit). Most reputable agencies comply immediately to avoid heavy FDCPA fines.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3" className="bg-white px-6 rounded-lg border">
-                <AccordionTrigger className="text-left font-bold py-6">How fast do I get the letter?</AccordionTrigger>
-                <AccordionContent className="pb-6 text-muted-foreground">
-                  The generation process takes less than 60 seconds once you complete the form. You can download it as a PDF immediately.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-4" className="bg-white px-6 rounded-lg border">
-                <AccordionTrigger className="text-left font-bold py-6">Can I edit the letter?</AccordionTrigger>
-                <AccordionContent className="pb-6 text-muted-foreground">
-                  Yes, we provide the letter in a preview window where you can make minor adjustments before downloading, though we recommend sticking to the AI-generated legal structure for maximum effectiveness.
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-5" className="bg-white px-6 rounded-lg border">
-                <AccordionTrigger className="text-left font-bold py-6">Do you store my information?</AccordionTrigger>
-                <AccordionContent className="pb-6 text-muted-foreground">
-                  We prioritize your privacy. We store your data temporarily to generate your letter. Once generated and downloaded, you can request data deletion at any time. We never sell your personal information.
+                  Once a debt collector receives a formal cease and desist letter, they are legally required to stop contacting you except for very specific legal reasons.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -193,11 +152,11 @@ export default function LandingPage() {
           <div className="container px-4 mx-auto">
             <h2 className="text-4xl lg:text-5xl font-headline mb-8">Take Back Your Peace Today</h2>
             <p className="text-xl mb-12 text-blue-100 max-w-2xl mx-auto">
-              Join thousands of Americans who have used StopAndDesist to end collector harassment once and for all.
+              Join thousands of Americans who have used StopAndDesist to end collector harassment.
             </p>
             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-primary font-bold text-xl h-16 px-12 rounded-full shadow-xl" asChild>
-              <Link href="/generate">
-                Create My Letter Now <ArrowRight className="ml-2 w-6 h-6" />
+              <Link href="/contact">
+                Contact Support <ArrowRight className="ml-2 w-6 h-6" />
               </Link>
             </Button>
           </div>

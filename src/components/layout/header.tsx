@@ -17,7 +17,6 @@ export function Header() {
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           <Link href="/#how-it-works" className="text-muted-foreground hover:text-primary transition-colors">How It Works</Link>
-          <Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors">Resources</Link>
           <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">Support</Link>
         </nav>
         <div className="flex items-center gap-4">
@@ -25,7 +24,7 @@ export function Header() {
             <Link href="/contact">Contact</Link>
           </Button>
           <Button className="bg-secondary hover:bg-secondary/90 text-primary font-bold" asChild>
-            <Link href="/generate">Get Started</Link>
+            <Link href="/contact">Get Help</Link>
           </Button>
         </div>
       </div>
