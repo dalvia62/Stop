@@ -60,7 +60,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-bold text-sm text-primary uppercase tracking-wider">Call Us</p>
-                    <p className="text-muted-foreground">+1-800-000-0000</p>
+                    <p className="text-muted-foreground">+91 9359013644</p>
                   </div>
                 </div>
 
