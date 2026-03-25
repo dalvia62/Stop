@@ -10,7 +10,6 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ShieldCheck, Loader2, Download, Printer, Lock, CheckCircle2 } from "lucide-react";
-import { generateCeaseAndDesistLetter } from "@/ai/flows/generate-cease-and-desist-letter";
 import { useToast } from "@/hooks/use-toast";
 
 export default function GeneratePage() {
@@ -35,28 +34,44 @@ export default function GeneratePage() {
   const handleGenerate = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    const formData = new FormData(e.currentTarget);
     
-    try {
-      const result = await generateCeaseAndDesistLetter({
-        fullName: formData.get('fullName') as string,
-        email: formData.get('email') as string,
-        address: formData.get('address') as string,
-        debtCollectorName: formData.get('collectorName') as string,
-        collectorAddress: formData.get('collectorAddress') as string,
-        accountNumber: formData.get('accountNumber') as string,
-        harassmentDescription: formData.get('harassment') as string,
-      });
-      setLetter(result.letterContent);
-    } catch (error) {
-      toast({
-        variant: "destructive",
-        title: "Generation Failed",
-        description: "An error occurred while generating your letter. Please try again.",
-      });
-    } finally {
+    // Simulate generation delay
+    setTimeout(() => {
+      setLetter(`[Your Full Name]
+[Your Address]
+[City, State, ZIP Code]
+[Email Address]
+[Phone Number]
+[Date]
+
+[Debt Collector's Name]
+[Debt Collector's Address]
+[City, State, ZIP Code]
+
+Re: Cease and Desist Communication Regarding Account #[Account Number]
+
+Dear [Debt Collector's Name],
+
+I am writing to exercise my rights under the Fair Debt Collection Practices Act (FDCPA), 15 U.S.C. § 1692c(c), and formally request that you cease and desist all communication with me regarding the above-referenced account.
+
+This letter serves as formal notice that I wish to terminate all contact from you, your agents, representatives, or anyone acting on your behalf. This includes, but is not limited to:
+
+- Telephone calls to my residence, workplace, or mobile phone
+- Text messages, emails, or any other form of electronic communication
+- Mail, letters, or any other written correspondence
+- In-person contact or visits
+
+You are hereby instructed to stop all collection activities related to this account immediately. Any further communication from you may constitute a violation of federal law.
+
+Please note that this request does not constitute an admission of liability for any alleged debt, nor does it waive any of my rights or defenses.
+
+If you believe you have a legal right to continue collection activities, you may contact me in writing only through certified mail. Any other form of contact will be considered harassment.
+
+Sincerely,
+
+[Your Full Name]`);
       setLoading(false);
-    }
+    }, 2000);
   };
 
   return (

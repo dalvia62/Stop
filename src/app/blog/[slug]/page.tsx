@@ -44,6 +44,12 @@ const posts = {
   }
 };
 
+export function generateStaticParams() {
+  return Object.keys(posts).map((slug) => ({
+    slug,
+  }));
+}
+
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const post = posts[params.slug as keyof typeof posts];
   return {
